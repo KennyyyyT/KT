@@ -7,7 +7,7 @@ by Kenny Tran (kat009@ucsd.edu)
 
 ## Introduction
 
-The following datasets contain recipes, ratings, reviews, etc. from food.com starting from 2008. Ultimately, we are trying to find **if the distributions of the number of steps for recipes before 2014 and after 2014 are the same.** Have recipes required a significantly different amount steps to complete them during these two time periods?
+The following datasets contain recipes, ratings, reviews, etc. from food.com starting from 2008. These datasets provide hundreds of thousands of information about all of the recipes on this website. Ultimately, we are trying to find **if the distributions of the number of steps for recipes before 2014 and after 2014 are the same.** Have recipes required a significantly different amount steps to complete them during these two time periods?
 
 This dataset contains **234429 rows**.
 
@@ -135,7 +135,7 @@ Next, I generated 500 samples using random.permutation to shuffle the "minutes" 
 
 After comparing how many statistics from the 500 samples were equal to or more extreme to the observed statistic, I got a p-value of 0.98. Since I'm using a 5% significance level, we **fail to reject the null hypothesis**. Meaning, **the missingness in the "review" column is not dependent on "minutes"**.
 
-This histogram below shows just how many sampled test statistics were equal or more extreme than the observed absolute difference of means of 33.5!
+This histogram below shows just how many sampled test statistics were **equal or more extreme than the observed absolute difference of means of 33.5!**
 
 <iframe src="assets/missingness.html" width=800 height=600 frameBorder=0></iframe>
 
