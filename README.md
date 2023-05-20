@@ -121,7 +121,7 @@ I then grabbed the "n_ingredients" and "review" columns from my DataFrame and ca
 
 Next, I generated 500 samples using random.permutation to shuffle the "n_ingredients" column in order to calculate 500 test statistics under the assumption that missingness is not dependent on "n_ingredients".
 
-After comparing how many statistics from the 500 samples were equal to or more extreme to the observed statistic, I got a p-value of 0.026. Since I'm using a 5% significance level, we **reject the null hypothesis**. Meaning, **the missingness in the "review" column is dependent on "n_ingredients"**.
+After comparing how many statistics from the 500 samples were equal to or more extreme to the observed statistic, I got a p-value of 0.024. Since I'm using a 5% significance level, we **reject the null hypothesis**. Meaning, **the missingness in the "review" column is dependent on "n_ingredients"**.
 
 
 
@@ -133,7 +133,7 @@ I then grabbed the "minutes" and "review" columns from my DataFrame and calculat
 
 Next, I generated 500 samples using random.permutation to shuffle the "minutes" column in order to calculate 500 test statistics under the assumption that missingness is not dependent on "minutes".
 
-After comparing how many statistics from the 500 samples were equal to or more extreme to the observed statistic, I got a p-value of 0.98. Since I'm using a 5% significance level, we **fail to reject the null hypothesis**. Meaning, **the missingness in the "review" column is not dependent on "minutes"**.
+After comparing how many statistics from the 500 samples were equal to or more extreme to the observed statistic, I got a p-value of 0.66. Since I'm using a 5% significance level, we **fail to reject the null hypothesis**. Meaning, **the missingness in the "review" column is not dependent on "minutes"**.
 
 This histogram below shows just how many sampled test statistics were **equal or more extreme than the observed absolute difference of means of 33.5!**
 
